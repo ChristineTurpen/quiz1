@@ -15,4 +15,29 @@
   The code for the application is hosted on GitHub.
   <br />
   There is a headline on the page of the application that is a non-black color.
+</h6> 
+
+<br />
+
+<h1>
+  QUIZ #2 SUBMISSION
+</h1>
+
+<h6>
+  Requirements:
 </h6>
+
+<%= link_to 'Add requirement', new_quiz_path, class: 'btn btn-primary'%>
+
+<br />
+<br />
+
+<% @quizzes.each do |quiz| %>
+  <div class="booyah-box col-10 offset-1">
+    <h2><%= quiz.title %></h2><br />
+    <i><%= quiz.requirements %></i><br />
+  </div>
+
+  <hr />
+<% end %>
+<br />

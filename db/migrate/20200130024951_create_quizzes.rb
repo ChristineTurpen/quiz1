@@ -1,6 +1,6 @@
-class CreateDescriptions < ActiveRecord::Migration[5.2]
+class CreateQuizzes < ActiveRecord::Migration[5.2]
   def change
-    create_table :descriptions do |t|
+    create_table :quizzes do |t|
       t.string :title
       t.string :requirements
       t.timestamps
